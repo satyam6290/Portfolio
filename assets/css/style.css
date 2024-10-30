@@ -2126,8 +2126,8 @@ body.dark-arshia , .dark-arshia .ajax-page-content{
  /* Hide all words initially */
 .word {
   display: none;
-  color: #028ac9;
-  margin-left: 8rem;
+  color: #ff0000;
+  /* margin-left: 8rem; */
 }
 
 /* Show the active word */
