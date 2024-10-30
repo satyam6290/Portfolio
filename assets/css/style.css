@@ -2123,3 +2123,15 @@ body.dark-arshia , .dark-arshia .ajax-page-content{
   background-color: #6F97F7;
   padding: 20px 0;
 } */
+ /* Hide all words initially */
+.word {
+  display: none;
+  color: #028ac9;
+  margin-left: 8rem;
+}
+
+/* Show the active word */
+.word.active {
+  display: inline;
+}
+

@@ -955,3 +955,25 @@ function themeOption(){
         $(this).addClass('active');
     });
 }
+
+// Get all words and set up an index
+const words = document.querySelectorAll('.word');
+let index = 0;
+
+// Function to rotate words
+function rotateWords() {
+    // Remove the active class from the current word
+    words[index].classList.remove('active');
+
+    // Move to the next word, looping back to the start if necessary
+    index = (index + 1) % words.length;
+
+    // Add the active class to the new current word
+    words[index].classList.add('active');
+}
+
+// Initialize by showing the first word
+words[index].classList.add('active');
+
+// Set the interval for switching (e.g., every 2 seconds)
+setInterval(rotateWords, 2000);
